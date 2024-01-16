@@ -1,0 +1,9 @@
+*Instrucciones para replica de contenido y repositorio en servidor de respaldo
+1.- Verificar repositorio activo
+2.- Realizar si es posible el ultimo "git push" de actualizacion
+3.- Abrir administrador Plesk de servidor emergente en: "https://erdm.mx:8443/modules/git/index.php/domain/repositories?dom_id=1&site_id=1" con sus respectivas credenciales
+4.- Ingresar a la seccion [Websites & Domains] -> [Git] -> [add Repositorio]
+5.- Ingresar el repositorio [fidi.git] con la url privada
+6.- Realizar la instruccion git pull para subir contenido del repositorio
+7.- Verificar en el administrador de archivos existencia y crrecto clonado
+8.- Validar funcionamiento en navegador
