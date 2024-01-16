@@ -1,0 +1,193 @@
+/* Animación para el efecto de timbre o sonido */
+@keyframes sonar {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* .swing-animation:focus {
+  animation-name: swing;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+} */
+#image {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.25s ease;
+}
+#floating-div {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0d0d0d;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+  z-index: 9999;
+}
+
+#floating-div button {
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+body {
+  background-image: url(../img/icons/back.jpg);
+  background-repeat: no-repeat;
+  background-size: 1366px;
+}
+
+/* .slide:hover,
+.slide:focus {
+  box-shadow: inset 10.5em 0 0 0 var(--hover);
+}
+
+.slide {
+  --color: #6d6a6a;
+  --hover: #f6f6f6;
+}
+
+button.slide {
+  color: var(--color);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+button.slide {
+  background: none;
+  border: none;
+  font: inherit;
+  margin: 0.5em;
+  padding: .5em 2em;
+  font-weight: bold;
+  text-align: center;
+  text-size-adjust: 10px;
+} */
+
+.photos {
+  --color: #6d6a6a;
+  --hover: #f6f6f6;
+}
+
+button.photos {
+  background: none;
+  border: none;
+  font: inherit;
+  margin: 0.5em;
+  padding: .5em 2em;
+  font-weight: bold;
+  text-align: center;
+  text-size-adjust: 10px;
+}
+
+button {
+  /* color: var(--color);
+  -webkit-transition: 0.25s;
+  transition: 0.25s; */
+  background: none;
+  border: none;
+  font: inherit;
+  margin: 2em;
+  padding: 1em 2em;
+  font-weight: bold;
+  text-align: center;
+  text-size-adjust: 10px;
+  color: #6d6a6a;
+}
+
+button:hover,
+button:focus {
+  /* border-color: var(--hover); */
+  color: #f6efef;
+}
+
+/* Estilos para el ícono */
+.btn i {
+  font-size: 20px;
+  transition: color 0.2s; /* Transición suave para el cambio de color */
+  position: absolute;
+  left: 8px;
+  padding: 2px;
+}
+
+.btn:hover i {
+  color: #16c7ff; /* Color del ícono al pasar el cursor */
+  animation: sonar ease-in-out 0.5s 1 alternate; /* Aplicar la animación al pasar el cursor */
+}
+
+.page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+#container {
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+}
+#image {
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  transition: transform 0.2s ease-out;/* Agregamos transición para el efecto inercial*/
+}
+
+
+

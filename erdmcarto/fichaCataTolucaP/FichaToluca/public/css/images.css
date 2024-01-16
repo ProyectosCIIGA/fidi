@@ -1,0 +1,65 @@
+.cardFoto{
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    font-family: arial;
+    font-size: 15px;
+    width: 800px;
+    height: auto;
+    border-color: green;
+}
+.imgCard{
+    width: 90px;
+    height: 90px;
+    justify-content: center;
+    text-align: center;
+}
+.jumboCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardEnBloque{
+    display: block;
+}
+.listaImg{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.zoneBoton{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 15%;
+}
+
+.listaImg label{
+    align-items: center;
+    padding: 0;
+    padding-top: 2px;
+    width: 40px;
+    height: 20px;
+    margin-bottom: 0;
+    font-size: 10px;
+}
+.listaImg p{
+    margin-bottom: 0;
+    margin-left: 5px;
+    width: 70%;
+    font-size: 12px;
+}
+.sc{
+    white-space: unset;
+}
+
+.visorImg {
+    height: 700px;
+    width: 100%;
+    align-items: center;
+}
+.visorImg img{
+    width: 100%;
+}
